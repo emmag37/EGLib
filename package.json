@@ -1,0 +1,19 @@
+{
+    "name": "com.eg.eglib",
+    "version": "1.0.0",
+    "displayName": "EGLib",
+    "description": "Reusable Core, Mechanics, and UI utilities for Unity projects.",
+    "unity": "6000.3",
+    "dependencies": {
+        "com.unity.textmeshpro": "3.0.6",
+        "com.unity.inputsystem": "1.7.0"
+    },
+    "keywords": [
+        "utilities",
+        "core",
+        "ui"
+    ],
+    "author": {
+        "name":  "Emma Glenn"
+    }
+}

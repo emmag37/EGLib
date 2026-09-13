@@ -1,0 +1,17 @@
+{
+    "name": "EGLib.UI",
+    "rootNamespace": "",
+    "references": [
+        "GUID:bf6e8fd37ce254b5bacc7741f8839c67",
+        "GUID:6055be8ebefd69e48b49212b09b47b2f"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
