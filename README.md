@@ -143,7 +143,7 @@ Add to your project's `Packages/manifest.json`:
 Or, access through the git repository:
 
 \```json
-"com.eg.eglib": "https://github.com/[emmag37]/eglib.git"
+"com.eg.eglib": "https://github.com/[emmag37]/EGLib.git"
 \```
 
 
