@@ -48,7 +48,7 @@ public class SafeAreaPanel : MonoBehaviour
             float topExpansion = 20f;      // increase top inset
             float bottomExpansion = 20f;   // increase bottom inset
             float sideExpansion = 0f;      // increase side insets if needed
-
+            
             safeArea.y -= bottomExpansion;
             safeArea.height += topExpansion + bottomExpansion;
 
@@ -64,5 +64,7 @@ public class SafeAreaPanel : MonoBehaviour
         rectTransform.anchorMin = anchorMin;
         rectTransform.anchorMax = anchorMax;
         rectTransform.offsetMin = rectTransform.offsetMax = Vector2.zero;
+
+        
     }
 }

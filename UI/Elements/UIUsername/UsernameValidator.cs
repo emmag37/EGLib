@@ -2,6 +2,15 @@ using UnityEngine;
 using System;
 using System.Text.RegularExpressions;
 
+
+public enum InvalidUsernameType
+{
+    None,
+    Short,
+    SpecialChars,
+    Profanity
+}
+
 /// <summary>
 /// Static class to validate a username against length, special characters,
 /// and profanity.
