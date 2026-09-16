@@ -175,4 +175,21 @@ public class ViewController<TView, TType, TData>
 
         view.UpdateView(data);
     }
+
+    /// <summary>
+    /// Disables/enables the top <typeparamref name="TView"></typeparamref> in the view stack to "pause"/"resume" all of
+    /// its UI elements.
+    /// </summary>
+    /// <param name="pause"><c>true</c> if view should be paused, <c>false</c> if view should resume.</param>
+    public void PauseTopView(bool pause)
+    {
+	    if (viewStack.Count == 0)
+	    {
+		    Debug.LogError("[ViewController] Pause top view called on empty stack");
+		    return;
+	    }
+	    
+	    TView topView = viewStack.Peek();
+	    topView.enabled = !pause;		// pause == true -> disable
+    }
 }
