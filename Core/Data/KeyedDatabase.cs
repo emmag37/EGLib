@@ -1,6 +1,7 @@
 using UnityEngine;
 using System.Collections.Generic;
 using System;
+using System.Linq;
 
 
 /// <summary>
@@ -82,4 +83,9 @@ public abstract class KeyedDatabase<TKey, TValue> : ScriptableObject
 	/// <param name="value">Holds the found value if this returns true, otherwise holds original reference.</param>
 	/// <returns><c>true</c> if the key was found, <c>false</c> otherwise.</returns>
     public bool TryGetValue(TKey key, out TValue value) => dict.TryGetValue(key, out value);
-}
+
+    /// <summary>
+    /// Returns an array of the keys currently in the dictionary.
+    /// </summary>
+    /// <returns>The array of <typeparam name="TKey"></typeparam>s.</returns>
+    public TKey[] GetKeys() => dict.Keys.ToArray();
