@@ -91,4 +91,10 @@ public abstract class KeyedDatabase<TKey, TValue> : ScriptableObject
 	/// </summary>
 	/// <returns>The array of <typeparam name="TKey"></typeparam>s.</returns>
 	public TKey[] GetKeys() => dict.Keys.ToArray();
+
+	/// <summary>
+	/// Returns an array of the values currently in the dictionary.
+	/// </summary>
+	/// <returns>The array of <typeparam name="TValue"></typeparam>s.</returns>
+	public TValue[] GetValues() => dict.Values.ToArray();
 }
