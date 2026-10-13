@@ -39,6 +39,8 @@ public abstract class KeyedDatabase<TKey, TValue> : ScriptableObject
 	// ==================================================
 	private Dictionary<TKey, TValue> dict = new Dictionary<TKey, TValue>();
 
+	private bool _initialized = false;
+
 
 	// ==================================================
 	// Initialization
@@ -52,6 +54,8 @@ public abstract class KeyedDatabase<TKey, TValue> : ScriptableObject
 	/// <exception cref="InvalidCastException">Thrown if <see cref="entries" is null.</exception>
 	public void Initialize()
 	{
+		if (_initialized) return;
+		
 		if (entries == null)
 			throw new InvalidOperationException("[KeyedDatabase] Requires non-null entries array for initialization");
 
@@ -71,6 +75,8 @@ public abstract class KeyedDatabase<TKey, TValue> : ScriptableObject
 
 			dict[entry.key] = entry.value;
 		}
+		
+		_initialized = true;
 	}
 
 
